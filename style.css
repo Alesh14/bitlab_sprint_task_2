@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: var(--palette-vk-font,-apple-system,BlinkMacSystemFont,'Roboto','Helvetica Neue',Geneva,"Noto Sans Armenian","Noto Sans Bengali","Noto Sans Cherokee","Noto Sans Devanagari","Noto Sans Ethiopic","Noto Sans Georgian","Noto Sans Hebrew","Noto Sans Kannada","Noto Sans Khmer","Noto Sans Lao","Noto Sans Osmanya","Noto Sans Tamil","Noto Sans Telugu","Noto Sans Thai",arial,Tahoma,verdana,sans-serif);
+	background-color: #e8eaed;
+}
+
+.header {
+	background-color: #4a75a4;
+	padding: 10px 0;
+}
+
+.header__logo-search-wrapper {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+	max-width: 1280px;
+	width: calc(100% - 140px);
+	margin: 0 auto;
+}
+
+.header__logo {
+	height: 35px;
+	width: 35px;
+}
+
+.header__input {
+	border-radius: 5px;
+	border: 1px solid black;
+	width: 260px;
+	border: 1px solid #555;
+	display: block;
+	padding: 9px 4px 9px 40px;
+	background: white
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+		no-repeat 13px center;
+}
+
+.main {
+	max-width: 1280px;
+	width: calc(100% - 140px);
+	margin: 50px auto 0;
+	display: flex;
+	column-gap: 20px;
+}
+
+.sidebar {
+	margin: 0 20px 0 0;
+}
+
+.sidebar__list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	list-style: none;
+}
+
+.sidebar__list-item {
+	color: #586d83;
+}
+
+.sections-wrapper {
+	display: flex;
+    width: 100%;
+}
+
+.photo-and-friends {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	max-width: 350px;
+}
+
+.photo-and-friends__photo-card {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	background-color: white;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.photo-and-friends__photo {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+    border-radius: 5px;
+}
+
+.photo-and-friends__friends {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	padding: 10px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.photo-and-friends__edit-button {
+    background-color: #E7EAED;
+    color: #586d83;
+    border: 1px solid #E7EAED;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+
+.photo-and-friends__friends-title-wrapper {
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
+}
+
+.photo-and-friends__friends-title,
+.photo-and-friends__friends-counter {
+	font-size: 12px;
+}
+
+.photo-and-friends__friends-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+
+.photo-and-friends__friend-photo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.photo-and-friends__photo-name-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.photo-and-friends__friend-name {
+    font-size: 12px;
+}
+
+.personal-info__fullname {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    width: calc(100% - 40px);
+    height: min-content;
+}
+
+.personal-info__status-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal-info__line {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.personal-info__info {
+    display: flex;
+    column-gap: 30px;
+    color: #586d83;
+}
+
+.personal-info__info__left {
+    list-style: none;
+}
+
+.personal-info__info__right {
+    list-style: none;
+}
+
+.personal-info__bio {
+    color: #586d83;
+}
+
+.personal-info__counters {
+    display: flex;
+    column-gap: 30px;
+    color: #586d83;
+    justify-content: space-between;
+}
+
+.personal-info__counter-wrapper {
+    padding: 0 30px;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    row-gap: 20px;
+}
+
+.note {
+    width: 100%;
+    height: min-content;
+    background-color: white;
+    border-radius: 5px;
+}
